@@ -1,0 +1,57 @@
+    <!DOCTYPE html>
+    <html>
+    <head>
+      
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    </head>
+    
+    <body>
+        <div style="max-width: 700px; margin: 0 auto">
+    
+            <h1>Random Push-up Type & Amount Generator</h1>
+            
+      <button onclick="getRandom()">Generate</button>
+    
+      <div id="result"></div>
+    
+      <script>
+        
+        // Data arrays
+        var numbers = [5, 10, 10, 10, 15, 15, 15, 20, 20, 20, 20, 25, 25, 25, 50];
+        var names = ["Cross Body", "Normal", "Normal","Normal","Normal","Normal","Wide", "Diamond","Diamond","Diamond", "Pike", "Archer(1/2 reps)", "Explosive (1/2 reps)"];
+        
+        // Get random item from array
+        function getRandomNumber() {  
+          var index = Math.floor(Math.random() * numbers.length);
+          return numbers[index];
+        }
+    
+        function getRandomName() {
+          var index = Math.floor(Math.random() * names.length);
+          return names[index];
+        }
+        
+        // Display 3 random name-number pairs
+        function getRandom() {
+          
+          var number1 = getRandomNumber();
+          var number2 = getRandomNumber();  
+          var number3 = getRandomNumber();   
+         
+          var name1 = getRandomName();
+          var name2 = getRandomName();
+          var name3 = getRandomName();
+       
+          document.getElementById("result").innerHTML = 
+            "Jared --  "  + name1 + " - " + number1 + "<br>" + "<br>" +
+            "James --  " + name2 + " - " + number2 + "<br>" + "<br>" +
+            "Dre --  " + name3 + " - " + number3;
+       
+        }
+    
+      </script>
+    
+    </body>
+    </html>

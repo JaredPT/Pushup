@@ -1,0 +1,27 @@
+body {
+    font-family: Arial; 
+    text-align: center;
+    background-color: #8fddd0;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    background-color: #1721a5;
+    cursor: pointer;
+  }
+  
+  #result {
+    margin-top: 30px;
+    color:white;
+    font-size: 30px;
+    font-weight: bold;
+    height: 300px;
+    overflow-y: auto;  
+    border: 2px dashed #555;
+    padding: 20px;
+    border-radius: 4px;
+  }
