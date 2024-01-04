@@ -20,8 +20,9 @@
         
         // Data arrays
         var numbers = [5, 10, 10, 10, 15, 15, 15, 20, 20, 20, 20, 25, 25, 25, 50];
-        var names = ["Cross Body", "Normal", "Normal","Normal","Normal","Normal","Wide", "Diamond","Diamond","Diamond", "Pike", "Archer(1/2 reps)", "Explosive (1/2 reps)"];
+        var names = ["Cross Body","Slow Tempo (1/2 reps)", "Normal", "Normal","Normal","Normal","Normal","Wide", "Diamond","Diamond","Diamond", "Pike", "Archer(1/2 reps)", "Explosive (1/2 reps)"];
         
+
         // Get random item from array
         function getRandomNumber() {  
           var index = Math.floor(Math.random() * numbers.length);
@@ -39,18 +40,21 @@
           var number1 = getRandomNumber();
           var number2 = getRandomNumber();  
           var number3 = getRandomNumber();   
-         
+          var number4 = getRandomNumber(); 
+
           var name1 = getRandomName();
           var name2 = getRandomName();
           var name3 = getRandomName();
+          var name4 = getRandomName();
        
           document.getElementById("result").innerHTML = 
             "Jared --  "  + name1 + " - " + number1 + "<br>" + "<br>" +
             "James --  " + name2 + " - " + number2 + "<br>" + "<br>" +
-            "Dre --  " + name3 + " - " + number3;
+            "Dre --  " + name4 + " - " + number4 + "<br>" + "<br>" +
+            "Greg --  " + name3 + " - " + number3;
        
         }
-    
+
       </script>
     
     </body>
